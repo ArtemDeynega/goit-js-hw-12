@@ -4,7 +4,7 @@ import { searchBox, countryList, countryInfo } from './js/refs';
 import { fetchCountries } from './js/fetchCountries';
 import { countriesMarkup } from './js/countriesMarkup';
 
-import { debounce } from 'lodash';
+import debounce from 'lodash.debounce';
 
 const DEBOUNCE_DELAY = 300;
 
