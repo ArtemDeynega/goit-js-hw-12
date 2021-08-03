@@ -2,7 +2,7 @@ import countriesTemplate from '../templates/countries.hbs';
 import countryTemplate from '../templates/country.hbs';
 
 import { clearMarkup } from './clear';
-import { searchBox, countryList, countryInfo } from './refs';
+import { countryList, countryInfo } from './refs';
 
 import { Notify } from 'notiflix';
 

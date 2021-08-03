@@ -1,6 +1,6 @@
 import './css/styles.css';
 
-import { searchBox, countryList, countryInfo } from './js/refs';
+import { searchBox } from './js/refs';
 import { fetchCountries } from './js/fetchCountries';
 import { countriesMarkup } from './js/countriesMarkup';
 
