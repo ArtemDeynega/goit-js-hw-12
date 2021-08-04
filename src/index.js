@@ -10,7 +10,7 @@ const DEBOUNCE_DELAY = 300;
 
 function onCountries(evt) {
     const incomingValue = evt.target.value.trim();
-    if (evt.target.value.trim()) {
+    if (incomingValue) {
         fetchCountries(incomingValue).then(countries =>
             countriesMarkup(countries),
         );
