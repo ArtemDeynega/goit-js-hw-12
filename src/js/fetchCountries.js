@@ -1,4 +1,5 @@
 import { Notify } from 'notiflix';
+
 const BASE_URL = 'https://restcountries.eu/rest/v2/name/';
 
 function fetchCountries(name) {
@@ -12,11 +13,11 @@ function fetchCountries(name) {
             return response.json();
         })
         .then(data => data)
-        .catch(() =>
-            Notify.failure(
+        .catch(() => {
+            return Notify.failure(
                 'Oops, there is no country with that name',
-            ),
-        );
+            );
+        });
 }
 
 export { fetchCountries };
